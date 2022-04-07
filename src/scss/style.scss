@@ -8,15 +8,9 @@
 
 
 
-body {
-	background-image: url('@img/cover.jpg');
-	@include bg-cover;
-}
-
-
-
-//-----components-----
+//=============/components/=============
 @import 'components/header';
-// @import 'components/burger';
+@import 'components/burger';
+@import 'components/intro';
 
-@import 'components/footer';
+// @import 'components/footer';

@@ -6,15 +6,126 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="css/style.min.css">
+
+
 	<title>О нас</title>
 </head>
 
 <body>
 
 	<header class="header">
-	<div class="header__container"></div>
+	<div class="container header__container">
+
+		<a href="#" class="header__logo logo">Logo</a>
+
+		<form action="#" class="header__search search-form">
+			<input type="text" class="input-reset search-form__input" placeholder="Введите для поиска">
+			<span class="search-form__icon">
+				<ion-icon name="search-outline"></ion-icon>
+			</span>
+		</form>
+
+		<nav class="header__menu menu-header">
+			<ul class="list-reset menu-header__list">
+				<li class="menu-header__item">
+					<a href="#" class="menu-header__link">
+						<span class="menu-header__icon">
+							<ion-icon name="cart-outline"></ion-icon>
+						</span>
+						<span class="menu-header__name">Оплата</span>
+					</a>
+				</li>
+				<li class="menu-header__item">
+					<a href="#" class="menu-header__link">
+						<span class="menu-header__icon">
+							<ion-icon name="cart-outline"></ion-icon>
+						</span>
+						<span class="menu-header__name">Доставка</span>
+					</a>
+				</li>
+				<li class="menu-header__item">
+					<a href="#" class="menu-header__link">
+						<span class="menu-header__icon">
+							<ion-icon name="cart-outline"></ion-icon>
+						</span>
+						<span class="menu-header__name">Контакты</span>
+					</a>
+				</li>
+			</ul>
+			<ul class="list-reset menu-header__list">
+				<li class="menu-header__item">
+					<a href="#" class="menu-header__link">
+						<span class="menu-header__icon">
+							<ion-icon name="cart-outline"></ion-icon>
+						</span>
+						<span class="menu-header__name">Каталог</span>
+					</a>
+				</li>
+				<li class="menu-header__item">
+					<a href="#" class="menu-header__link">
+						<span class="menu-header__icon">
+							<ion-icon name="cart-outline"></ion-icon>
+						</span>
+						<span class="menu-header__name">Корзина</span>
+					</a>
+				</li>
+				<li class="menu-header__item">
+					<a href="#" class="menu-header__link">
+						<span class="menu-header__icon">
+							<ion-icon name="heart-outline"></ion-icon>
+						</span>
+						<span class="menu-header__name">Избранное</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<button class="btn-reset burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+			<span class="burger__line burger__line--first"></span>
+			<span class="burger__line burger__line--second"></span>
+			<span class="burger__line burger__line--third"></span>
+			<span class="burger__line burger__line--fourth"></span>
+		</button>
+	</div>
+
+		<nav class="nav">
+			<ul class="list-reset nav__list">
+				<li class="nav__item"><a href="#" class="nav__link">Мебель для персонала
+					<span class="nav__link-icon"></span>
+					<ul class="list-reset nav__list-drop">
+						<li class="nav__item-drop"><a href="#" class="nav__link-drop">Подгатегория</a></li>
+						<li class="nav__item-drop"-drop><a href="#" class="nav__link-drop">Подгатегория</a></li>
+						<li class="nav__item-drop"><a href="#" class="nav__link-drop">Подгатегория</a></li>
+					</ul>
+				</a></li>
+				<li class="nav__item"><a href="#" class="nav__link">
+					<span class="nav__link-name">Кабинеты руководителей</span>
+					<span class="nav__link-icon"></span>
+				</a></li>
+				<li class="nav__item"><a href="#" class="nav__link">Кресла и стулья
+					<span class="nav__link-icon"></span>
+				</a></li>
+				<li class="nav__item"><a href="#" class="nav__link">Офисные диваны
+					<span class="nav__link-icon"></span>
+				</a></li>
+				<li class="nav__item"><a href="#" class="nav__link">Стойки ресепшен
+					<span class="nav__link-icon"></span>
+				</a></li>
+				<li class="nav__item"><a href="#" class="nav__link">Категория товара
+					<span class="nav__link-icon"></span>
+				</a></li>
+				<li class="nav__item"><a href="#" class="nav__link">Категория товара
+					<span class="nav__link-icon"></span>
+				</a></li>
+				<li class="nav__item"><a href="#" class="nav__link">Категория товара
+					<span class="nav__link-icon"></span>
+				</a></li>
+			</ul>
+		</nav>
 </header>
+
 	<main></main>
 	<footer class="footer"></footer>
 

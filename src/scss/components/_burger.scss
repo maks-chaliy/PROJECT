@@ -1,16 +1,16 @@
+// //=============/=============/=============
 //класс для удаления скролла при открытом меню
 .stop-scroll {
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
-//=============/=============/=============
 .burger {
 	position: relative;
-	display: none;
+	display: block;
 	width: 44px;
 	height: 44px;
-	border: 1px solid #000;
-	border-radius: 10px;
+	border: 1px solid var(--black-color);
+	border-radius: 8px;
 	cursor: pointer;
 
 	&__line {
@@ -20,7 +20,7 @@
 		transform: translateY(-50%) translateX(-50%);
 		width: 24px;
 		height: 2px;
-		background-color: black;
+		background-color: var(--black-color);
 		transition: all 0.3s linear;
 
 		&--third {
@@ -32,7 +32,7 @@
 		}
 	}
 
-	&--open {
+	&--active {
 		.burger__line {
 			&--first {
 				transform: rotate(45deg);
