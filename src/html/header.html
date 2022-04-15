@@ -1,110 +1,65 @@
 <header class="header">
 	<div class="container header__container">
+		<div class="header__top">
+			<a href="../index.html" class="header__logo logo logo-top">
+				<svg class="logo__icon">
+					<use xlink:href="img/svg/sprite.svg#logo"></use>
+				</svg>
+			</a>
 
-		<a href="#" class="header__logo logo">Logo</a>
+			<form action="#" class="header__search search-form">
+				<input type="text" class="input-reset search-form__input" placeholder="Введите для поиска">
+				<svg class="search-form__icon">
+					<use xlink:href="img/svg/sprite.svg#search"></use>
+				</svg>
+			</form>
 
-		<form action="#" class="header__search search-form">
-			<input type="text" class="input-reset search-form__input" placeholder="Введите для поиска">
-			<span class="search-form__icon">
-				<ion-icon name="search-outline"></ion-icon>
-			</span>
-		</form>
+			<button class="btn-reset burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+				<span class="burger__line burger__line--first"></span>
+				<span class="burger__line burger__line--second"></span>
+				<span class="burger__line burger__line--third"></span>
+				<span class="burger__line burger__line--fourth"></span>
+			</button>
+		</div>
 
-		<nav class="header__menu menu-header">
-			<ul class="list-reset menu-header__list">
-				<li class="menu-header__item">
-					<a href="#" class="menu-header__link">
-						<span class="menu-header__icon">
-							<ion-icon name="cart-outline"></ion-icon>
-						</span>
-						<span class="menu-header__name">Оплата</span>
-					</a>
-				</li>
-				<li class="menu-header__item">
-					<a href="#" class="menu-header__link">
-						<span class="menu-header__icon">
-							<ion-icon name="cart-outline"></ion-icon>
-						</span>
-						<span class="menu-header__name">Доставка</span>
-					</a>
-				</li>
-				<li class="menu-header__item">
-					<a href="#" class="menu-header__link">
-						<span class="menu-header__icon">
-							<ion-icon name="cart-outline"></ion-icon>
-						</span>
-						<span class="menu-header__name">Контакты</span>
-					</a>
-				</li>
-			</ul>
-			<ul class="list-reset menu-header__list">
-				<li class="menu-header__item">
-					<a href="#" class="menu-header__link">
-						<span class="menu-header__icon">
-							<ion-icon name="cart-outline"></ion-icon>
-						</span>
-						<span class="menu-header__name">Каталог</span>
-					</a>
-				</li>
-				<li class="menu-header__item">
-					<a href="#" class="menu-header__link">
-						<span class="menu-header__icon">
-							<ion-icon name="cart-outline"></ion-icon>
-						</span>
-						<span class="menu-header__name">Корзина</span>
-					</a>
-				</li>
-				<li class="menu-header__item">
-					<a href="#" class="menu-header__link">
-						<span class="menu-header__icon">
-							<ion-icon name="heart-outline"></ion-icon>
-						</span>
-						<span class="menu-header__name">Избранное</span>
-					</a>
-				</li>
-			</ul>
-		</nav>
-
-		<button class="btn-reset burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
-			<span class="burger__line burger__line--first"></span>
-			<span class="burger__line burger__line--second"></span>
-			<span class="burger__line burger__line--third"></span>
-			<span class="burger__line burger__line--fourth"></span>
-		</button>
 	</div>
+	<!--/.container header__container-->
+</header>
 
-		<nav class="nav">
-			<ul class="list-reset nav__list">
-				<li class="nav__item"><a href="#" class="nav__link">Мебель для персонала
-					<span class="nav__link-icon"></span>
-					<ul class="list-reset nav__list-drop">
-						<li class="nav__item-drop"><a href="#" class="nav__link-drop">Подгатегория</a></li>
-						<li class="nav__item-drop"-drop><a href="#" class="nav__link-drop">Подгатегория</a></li>
-						<li class="nav__item-drop"><a href="#" class="nav__link-drop">Подгатегория</a></li>
-					</ul>
-				</a></li>
-				<li class="nav__item"><a href="#" class="nav__link">
-					<span class="nav__link-name">Кабинеты руководителей</span>
-					<span class="nav__link-icon"></span>
-				</a></li>
-				<li class="nav__item"><a href="#" class="nav__link">Кресла и стулья
-					<span class="nav__link-icon"></span>
-				</a></li>
-				<li class="nav__item"><a href="#" class="nav__link">Офисные диваны
-					<span class="nav__link-icon"></span>
-				</a></li>
-				<li class="nav__item"><a href="#" class="nav__link">Стойки ресепшен
-					<span class="nav__link-icon"></span>
-				</a></li>
-				<li class="nav__item"><a href="#" class="nav__link">Категория товара
-					<span class="nav__link-icon"></span>
-				</a></li>
-				<li class="nav__item"><a href="#" class="nav__link">Категория товара
-					<span class="nav__link-icon"></span>
-				</a></li>
-				<li class="nav__item"><a href="#" class="nav__link">Категория товара
-					<span class="nav__link-icon"></span>
-				</a></li>
+<div class="header__bottom">
+	<div class="container header__bottom-container">
+		<nav class="menu">
+			<a href="../index.html" class="header__logo logo logo-bottom">
+				<svg class="logo__icon">
+					<use xlink:href="img/svg/sprite.svg#logo"></use>
+				</svg>
+			</a>
+			<ul class="list-reset menu__list">
+				<li class="menu__item"><a href="#" class="menu__link">
+						<svg class="menu__icon">
+							<use xlink:href="img/svg/sprite.svg#delivery"></use>
+						</svg>
+						<span class="menu__name">Доставка</span>
+					</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">
+						<svg class="menu__icon">
+							<use xlink:href="img/svg/sprite.svg#phone"></use>
+						</svg>
+						<span class="menu__name">Контакты</span>
+					</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">
+						<svg class="menu__icon">
+							<use xlink:href="img/svg/sprite.svg#favorites"></use>
+						</svg>
+						<span class="menu__name">Избранное</span>
+					</a></li>
+				<li class="menu__item"><a href="../cart.html" class="menu__link">
+						<svg class="menu__icon">
+							<use xlink:href="img/svg/sprite.svg#cart"></use>
+						</svg>
+						<span class="menu__name">Корзина</span>
+					</a></li>
 			</ul>
 		</nav>
-</header>
+	</div>
+</div>

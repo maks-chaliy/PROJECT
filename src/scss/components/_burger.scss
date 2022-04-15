@@ -1,15 +1,17 @@
 // //=============/=============/=============
 //класс для удаления скролла при открытом меню
 .stop-scroll {
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 .burger {
+	margin-left: 20px;
 	position: relative;
 	display: block;
 	width: 44px;
 	height: 44px;
-	border: 1px solid var(--black-color);
+	box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.6), inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+		4px 8px 8px rgba(0, 0, 0, 0.4), inset -2px -2px 5px rgba(0, 0, 0, 0.3);
 	border-radius: 8px;
 	cursor: pointer;
 
@@ -25,10 +27,23 @@
 
 		&--third {
 			margin-top: 7px;
+
+			@include tablet {
+				margin-top: 5px;
+			}
 		}
 
 		&--fourth {
 			margin-top: -7px;
+
+			@include tablet {
+				margin-top: -5px;
+			}
+		}
+
+		@include tablet {
+			width: 16px;
+			height: 2px;
 		}
 	}
 
@@ -49,5 +64,15 @@
 				opacity: 0;
 			}
 		}
+	}
+
+	@include tablet {
+		width: 36px;
+		height: 36px;
+	}
+
+	@include mobile {
+		width: 30px;
+		height: 30px;
 	}
 }

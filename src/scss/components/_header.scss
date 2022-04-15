@@ -1,15 +1,49 @@
 //=============/=============/=============
 .header {
-	margin: 10px;
+	margin-top: 10px;
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 70px;
 
+	@include tablet {
+		margin-top: 0;
+		height: 60px;
+	}
 
 	&__container {
+		height: 100%;
+	}
+
+	&__top {
+		height: 100%;
 		padding: 10px;
+		width: 100%;
 		@include flex-center-sb;
 		box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.6), inset 2px 2px 5px rgba(255, 255, 255, 0.25),
 			8px 15px 15px rgba(0, 0, 0, 0.4), inset -2px -2px 5px rgba(0, 0, 0, 0.3);
 		border-radius: 8px;
 		background: var(--white-color);
+	}
+
+	&__bottom {
+		margin-top: 95px;
+
+		@include tablet {
+			position: fixed;
+			z-index: 10;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+		}
+
+		&-container {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
 	}
 }
 
@@ -19,6 +53,35 @@
 	font-weight: 600;
 	text-transform: uppercase;
 	color: var(--blue-color);
+
+	&__icon {
+		height: 30px;
+		width: 140px;
+
+		@include mobile {
+			height: 24px;
+			width: 110px;
+		}
+	}
+
+	&-top {
+		padding-right: 20px;
+
+		@include mobile {
+			display: none;
+		}
+	}
+
+	&-bottom {
+		height: 60px;
+		padding-right: 50px;
+		display: none;
+
+		@include mobile {
+			@include flex-h-center;
+			padding-right: 15px;
+		}
+	}
 }
 
 //=============/=============/=============
@@ -26,7 +89,7 @@
 	position: relative;
 	@include flex;
 	background-color: #f5f5f5;
-	width: 220px;
+	width: 65%;
 	padding: 10px;
 	border-radius: 8px;
 
@@ -42,121 +105,80 @@
 	}
 
 	&__icon {
+		padding-left: 10px;
 		cursor: pointer;
 		color: var(--black-color);
+		width: 25px;
+		height: 20px;
+	}
+
+	@include mobile {
+		width: 80%;
+		padding: 5px 10px;
 	}
 }
 
 //=============/=============/=============
-.menu-header {
-	padding: 0 15px;
-	&__list {
-		@include flex-center-sb;
+.menu {
+	width: 100%;
+	height: 60px;
+	@include flex-all-center;
 
-		&:not(:last-child) {
-			margin-bottom: 10px;
+	@include tablet {
+		padding: 0 10px;
+		width: 100%;
+		box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.6), inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+			8px 15px 15px rgba(0, 0, 0, 0.4), inset -2px -2px 5px rgba(0, 0, 0, 0.3);
+		border-radius: 8px;
+		background: var(--white-color);
+	}
+
+	&__list {
+		@include flex-all-center;
+		width: 100%;
+		padding: 0 20px;
+
+		@include tablet {
+			@include flex-center-sb;
+			padding: 0;
 		}
 	}
 
 	&__item {
 		&:not(:last-child) {
-			margin-right: 30px;
+			margin-right: 50px;
+		}
+
+		@include tablet {
+			&:not(:last-child) {
+				margin-right: 0;
+			}
 		}
 	}
 
+	&__list {
+		@include flex-h-center;
+	}
+
 	&__link {
-		color: 	var(--black-color);
-		font-size: 16px;
+		@include flex-v-center;
+		color: var(--black-color);
 	}
 
 	&__icon {
-		svg {
-			width: 20px;
-			height: 20px;
-			fill: #505050;
-		}
-	}
-}
+		margin-right: 10px;
+		width: 20px;
+		height: 20px;
+		fill: currentColor;
 
-//=============/=============/=============
-.nav {
-	position: fixed;
-	z-index: 100;
-	left: 50%;
-	transform: translateX(-50%);
-	top: -100vh;
-	width: 100%;
-	max-width: 1170px;
-	box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.6), inset 2px 2px 5px rgba(255, 255, 255, 0.25),
-		8px 15px 15px rgba(0, 0, 0, 0.4), inset -2px -2px 5px rgba(0, 0, 0, 0.3);
-	border-radius: 8px;
-	background-color: var(--white-color);
-	transition: top 0.5s linear;
-
-	&__list {
-		width: 250px;
-		position: relative;
-	}
-
-	&__item:hover .nav__link {
-		background-color: orange;
-	}
-
-	&__list-drop {
-		display: none;
-	}
-
-	&__link {
-		display: inline-block;
-		padding: 10px 10px 10px 25px;
-		color: var(--black-color);
-		font-size: 16px;
-		@include flex-center-sb;
-		transition: background-color 0.3s linear;
-
-		&:hover {
-			.nav__link-icon::before {
-				transform: rotate(-45deg);
-			}
-
-			.nav__link-icon::after {
-				transform: rotate(45deg);
-			}
+		@include tablet {
+			margin-right: 0;
 		}
 	}
 
-	&__link-icon {
-		position: relative;
-		width: 13.5px;
-		height: 10px;
-		background-color: transparent;
-
-		&::before {
-			content: "";
-			position: absolute;
-			left: 0;
-			top: 50%;
-			width: 8px;
-			height: 1px;
-			background-color: var(--black-color);
-			transform: translateY(-50%) rotate(45deg);
-			transition: transform 0.3s linear;
+	&__name {
+		@include tablet {
+			display: none;
 		}
-
-		&::after {
-			content: "";
-			position: absolute;
-			right: 0;
-			top: 50%;
-			width: 8px;
-			height: 1px;
-			background-color: var(--black-color);
-			transform: translateY(-50%) rotate(-45deg);
-			transition: transform 0.3s linear;
-		}
-	}
-
-	&--active {
-		top: 90px;
 	}
 }

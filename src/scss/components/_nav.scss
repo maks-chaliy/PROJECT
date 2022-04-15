@@ -1,0 +1,81 @@
+//=============/=============/=============
+.navigation {
+	padding: 0 15px;
+	position: fixed;
+	top: -110%;
+	left: 50%;
+	transform: translateX(-50%);
+	height: auto;
+	width: 100%;
+	max-width: 1200px;
+	z-index: 100;
+	box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.6), inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+		8px 15px 15px rgba(0, 0, 0, 0.4), inset -2px -2px 5px rgba(0, 0, 0, 0.3);
+	border-radius: 8px;
+	background-color: var(--white-color);
+	transition: top 0.5s linear;
+	margin: 0 auto;
+	overflow: auto;
+	scrollbar-width: none; /* For Mozila*/
+
+	@include tablet {
+		top: 0;
+		left: -100%;
+		width: 80%;
+		height: 100vh;
+		transform: translateX(0);
+		transition: left 0.5s linear;
+	}
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+
+	&--active {
+		top: 90px;
+
+		@include tablet {
+			left: 0;
+			top: 0;
+		}
+	}
+}
+
+//=============/=============/=============
+.nav-dropdown {
+	overflow: hidden;
+	height: 0;
+	transition: all 0.25s ease;
+
+	&__list {
+		padding: 10px 20px;
+	}
+}
+
+//=============/=============/=============
+.nav {
+	width: 250px;
+
+	&__header {
+		width: 100%;
+		display: flex;
+		align-items: center;
+	}
+
+	&__title {
+		color: #000;
+		position: relative;
+		transition: 0.2s;
+	}
+
+	&__icon {
+		width: 20px;
+		height: 20px;
+		margin-left: auto;
+		transition: transform 0.3s linear;
+	}
+
+	&-open .nav__icon {
+		transform: rotate(180deg);
+	}
+}

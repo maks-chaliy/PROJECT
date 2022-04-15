@@ -1,35 +1,39 @@
 <section class="intro">
-	<div class="intro__container container">
+	<div class="container intro__container">
+		<h2 class="visually-hidden" aria-hidden="true" tabindex="-1">Заголовок рекламного блока</h2>
 
-		<div class="slider swiper-no-swiping">
-			<button class="btn-reset slider__btn slider__btn--next"></button>
-			<button class="btn-reset slider__btn slider__btn--prev"></button>
+		<div class="slider">
+			<button class="btn-reset slider__btn slider__btn-next">
+				<span class="slider__btn-icon">
+					<ion-icon name="chevron-forward-outline"></ion-icon>
+				</span>
+			</button>
+			<button class="btn-reset slider__btn slider__btn-prev">
+				<span class="slider__btn-icon">
+					<ion-icon name="chevron-back-outline"></ion-icon>
+				</span>
+			</button>
 			<div class="slider__wrapper">
-				<div class="slider__slide card"></div>
-				<div class="slider__slide card"></div>
-				<div class="slider__slide card"></div>
-				<div class="slider__slide card"></div>
-				<div class="slider__slide card"></div>
+				<div class="slider__slide">
+					<picture class="slider__image">
+						<source srcset="@img/intro_slider_01.webp" type="image/webp">
+						<img loading="lazy" src="@img/intro_slider_01.jpg" class="image" width="" height="" alt="">
+					</picture>
+				</div>
+				<div class="slider__slide">
+					<picture class="slider__image">
+						<source srcset="@img/intro_slider_02.webp" type="image/webp">
+						<img loading="lazy" src="@img/intro_slider_02.jpg" class="image" width="" height="" alt="">
+					</picture>
+				</div>
+				<div class="slider__slide">
+					<picture class="slider__image">
+						<source srcset="@img/intro_slider_03.webp" type="image/webp">
+						<img loading="lazy" src="@img/intro_slider_03.jpg" class="image" width="" height="" alt="">
+					</picture>
+				</div>
 			</div>
-
-
-<!-- <div class="slider-container">
-	<div class="slider">
-		<button class="btn-reset intro__slider-btn intro__slider-btn--next"></button>
-		<button class="btn-reset intro__slider-btn intro__slider-btn--prev"></button>
-		<div class="slider__wrapper">
-			<div class="slider__slide card"></div>
-			<div class="swiper__slide card"></div>
-			<div class="swiper__slide card"></div>
-			<div class="swiper__slide card"></div>
-			<div class="swiper__slide card"></div>
-			<div class="swiper__slide card"></div>
 		</div>
-	</div>
-
-</div> -->
-
 
 	</div>
 </section>
-

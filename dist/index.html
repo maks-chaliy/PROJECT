@@ -18,160 +18,270 @@
 	<div class="site-container">
 		<header class="header">
 	<div class="container header__container">
+		<div class="header__top">
+			<a href="../index.html" class="header__logo logo logo-top">
+				<svg class="logo__icon">
+					<use xlink:href="img/svg/sprite.svg#logo"></use>
+				</svg>
+			</a>
 
-		<a href="#" class="header__logo logo">Logo</a>
+			<form action="#" class="header__search search-form">
+				<input type="text" class="input-reset search-form__input" placeholder="Введите для поиска">
+				<svg class="search-form__icon">
+					<use xlink:href="img/svg/sprite.svg#search"></use>
+				</svg>
+			</form>
 
-		<form action="#" class="header__search search-form">
-			<input type="text" class="input-reset search-form__input" placeholder="Введите для поиска">
-			<span class="search-form__icon">
-				<ion-icon name="search-outline"></ion-icon>
-			</span>
-		</form>
+			<button class="btn-reset burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+				<span class="burger__line burger__line--first"></span>
+				<span class="burger__line burger__line--second"></span>
+				<span class="burger__line burger__line--third"></span>
+				<span class="burger__line burger__line--fourth"></span>
+			</button>
+		</div>
 
-		<nav class="header__menu menu-header">
-			<ul class="list-reset menu-header__list">
-				<li class="menu-header__item">
-					<a href="#" class="menu-header__link">
-						<span class="menu-header__icon">
-							<ion-icon name="cart-outline"></ion-icon>
-						</span>
-						<span class="menu-header__name">Оплата</span>
-					</a>
-				</li>
-				<li class="menu-header__item">
-					<a href="#" class="menu-header__link">
-						<span class="menu-header__icon">
-							<ion-icon name="cart-outline"></ion-icon>
-						</span>
-						<span class="menu-header__name">Доставка</span>
-					</a>
-				</li>
-				<li class="menu-header__item">
-					<a href="#" class="menu-header__link">
-						<span class="menu-header__icon">
-							<ion-icon name="cart-outline"></ion-icon>
-						</span>
-						<span class="menu-header__name">Контакты</span>
-					</a>
-				</li>
-			</ul>
-			<ul class="list-reset menu-header__list">
-				<li class="menu-header__item">
-					<a href="#" class="menu-header__link">
-						<span class="menu-header__icon">
-							<ion-icon name="cart-outline"></ion-icon>
-						</span>
-						<span class="menu-header__name">Каталог</span>
-					</a>
-				</li>
-				<li class="menu-header__item">
-					<a href="#" class="menu-header__link">
-						<span class="menu-header__icon">
-							<ion-icon name="cart-outline"></ion-icon>
-						</span>
-						<span class="menu-header__name">Корзина</span>
-					</a>
-				</li>
-				<li class="menu-header__item">
-					<a href="#" class="menu-header__link">
-						<span class="menu-header__icon">
-							<ion-icon name="heart-outline"></ion-icon>
-						</span>
-						<span class="menu-header__name">Избранное</span>
-					</a>
-				</li>
-			</ul>
-		</nav>
-
-		<button class="btn-reset burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
-			<span class="burger__line burger__line--first"></span>
-			<span class="burger__line burger__line--second"></span>
-			<span class="burger__line burger__line--third"></span>
-			<span class="burger__line burger__line--fourth"></span>
-		</button>
 	</div>
-
-		<nav class="nav">
-			<ul class="list-reset nav__list">
-				<li class="nav__item"><a href="#" class="nav__link">Мебель для персонала
-					<span class="nav__link-icon"></span>
-					<ul class="list-reset nav__list-drop">
-						<li class="nav__item-drop"><a href="#" class="nav__link-drop">Подгатегория</a></li>
-						<li class="nav__item-drop"-drop><a href="#" class="nav__link-drop">Подгатегория</a></li>
-						<li class="nav__item-drop"><a href="#" class="nav__link-drop">Подгатегория</a></li>
-					</ul>
-				</a></li>
-				<li class="nav__item"><a href="#" class="nav__link">
-					<span class="nav__link-name">Кабинеты руководителей</span>
-					<span class="nav__link-icon"></span>
-				</a></li>
-				<li class="nav__item"><a href="#" class="nav__link">Кресла и стулья
-					<span class="nav__link-icon"></span>
-				</a></li>
-				<li class="nav__item"><a href="#" class="nav__link">Офисные диваны
-					<span class="nav__link-icon"></span>
-				</a></li>
-				<li class="nav__item"><a href="#" class="nav__link">Стойки ресепшен
-					<span class="nav__link-icon"></span>
-				</a></li>
-				<li class="nav__item"><a href="#" class="nav__link">Категория товара
-					<span class="nav__link-icon"></span>
-				</a></li>
-				<li class="nav__item"><a href="#" class="nav__link">Категория товара
-					<span class="nav__link-icon"></span>
-				</a></li>
-				<li class="nav__item"><a href="#" class="nav__link">Категория товара
-					<span class="nav__link-icon"></span>
-				</a></li>
-			</ul>
-		</nav>
+	<!--/.container header__container-->
 </header>
 
+<div class="header__bottom">
+	<div class="container header__bottom-container">
+		<nav class="menu">
+			<a href="../index.html" class="header__logo logo logo-bottom">
+				<svg class="logo__icon">
+					<use xlink:href="img/svg/sprite.svg#logo"></use>
+				</svg>
+			</a>
+			<ul class="list-reset menu__list">
+				<li class="menu__item"><a href="#" class="menu__link">
+						<svg class="menu__icon">
+							<use xlink:href="img/svg/sprite.svg#delivery"></use>
+						</svg>
+						<span class="menu__name">Доставка</span>
+					</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">
+						<svg class="menu__icon">
+							<use xlink:href="img/svg/sprite.svg#phone"></use>
+						</svg>
+						<span class="menu__name">Контакты</span>
+					</a></li>
+				<li class="menu__item"><a href="#" class="menu__link">
+						<svg class="menu__icon">
+							<use xlink:href="img/svg/sprite.svg#favorites"></use>
+						</svg>
+						<span class="menu__name">Избранное</span>
+					</a></li>
+				<li class="menu__item"><a href="../cart.html" class="menu__link">
+						<svg class="menu__icon">
+							<use xlink:href="img/svg/sprite.svg#cart"></use>
+						</svg>
+						<span class="menu__name">Корзина</span>
+					</a></li>
+			</ul>
+		</nav>
+	</div>
+</div>
+		<nav class="navigation">
+
+	<div class="nav">
+		<div class="nav__item">
+			<button class="btn-reset nav__header" aria-expanded="false">
+				<span class="nav__title">Каталог товаров</span>
+				<svg class="nav__icon">
+					<use xlink:href="img/svg/sprite.svg#chevron_bottom"></use>
+				</svg>
+			</button>
+			<div class="nav-dropdown" aria-hidden="true">
+				<ul class="list-reset nav-dropdown__list">
+					<li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Второй уровень</a></li>
+					<li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Второй уровень</a></li>
+					<li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Второй уровень</a></li>
+					<li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Второй уровень</a></li>
+					<li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Второй уровень</a></li>
+					<li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Второй уровень</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="nav__item">
+			<button class="btn-reset nav__header" aria-expanded="false">
+				<span class="nav__title">Каталог товаров</span>
+				<svg class="nav__icon">
+					<use xlink:href="img/svg/sprite.svg#chevron_bottom"></use>
+				</svg>
+			</button>
+			<div class="nav-dropdown" aria-hidden="true">
+				<ul class="list-reset nav-dropdown__list">
+					<li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Второй уровень</a></li>
+					<li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Второй уровень</a></li>
+					<li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Второй уровень</a></li>
+					<li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Второй уровень</a></li>
+					<li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Второй уровень</a></li>
+					<li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Второй уровень</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="nav__item">
+			<button class="btn-reset nav__header" aria-expanded="false">
+				<span class="nav__title">Каталог товаров</span>
+				<svg class="nav__icon">
+					<use xlink:href="img/svg/sprite.svg#chevron_bottom"></use>
+				</svg>
+			</button>
+			<div class="nav-dropdown" aria-hidden="true">
+				<ul class="list-reset nav-dropdown__list">
+					<li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Второй уровень</a></li>
+					<li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Второй уровень</a></li>
+					<li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Второй уровень</a></li>
+					<li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Второй уровень</a></li>
+					<li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Второй уровень</a></li>
+					<li class="nav-dropdown__item"><a href="#" class="nav-dropdown__link">Второй уровень</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</nav>
 		<main>
 
 			<section class="intro">
-	<div class="intro__container container">
+	<div class="container intro__container">
+		<h2 class="visually-hidden" aria-hidden="true" tabindex="-1">Заголовок рекламного блока</h2>
 
-		<div class="slider swiper-no-swiping">
-			<button class="btn-reset slider__btn slider__btn--next"></button>
-			<button class="btn-reset slider__btn slider__btn--prev"></button>
+		<div class="slider">
+			<button class="btn-reset slider__btn slider__btn-next">
+				<span class="slider__btn-icon">
+					<ion-icon name="chevron-forward-outline"></ion-icon>
+				</span>
+			</button>
+			<button class="btn-reset slider__btn slider__btn-prev">
+				<span class="slider__btn-icon">
+					<ion-icon name="chevron-back-outline"></ion-icon>
+				</span>
+			</button>
 			<div class="slider__wrapper">
-				<div class="slider__slide card"></div>
-				<div class="slider__slide card"></div>
-				<div class="slider__slide card"></div>
-				<div class="slider__slide card"></div>
-				<div class="slider__slide card"></div>
+				<div class="slider__slide">
+					<picture class="slider__image">
+						<source srcset="img/intro_slider_01.webp" type="image/webp">
+						<img loading="lazy" src="img/intro_slider_01.jpg" class="image" width="" height="" alt="">
+					</picture>
+				</div>
+				<div class="slider__slide">
+					<picture class="slider__image">
+						<source srcset="img/intro_slider_02.webp" type="image/webp">
+						<img loading="lazy" src="img/intro_slider_02.jpg" class="image" width="" height="" alt="">
+					</picture>
+				</div>
+				<div class="slider__slide">
+					<picture class="slider__image">
+						<source srcset="img/intro_slider_03.webp" type="image/webp">
+						<img loading="lazy" src="img/intro_slider_03.jpg" class="image" width="" height="" alt="">
+					</picture>
+				</div>
 			</div>
-
-
-<!-- <div class="slider-container">
-	<div class="slider">
-		<button class="btn-reset intro__slider-btn intro__slider-btn--next"></button>
-		<button class="btn-reset intro__slider-btn intro__slider-btn--prev"></button>
-		<div class="slider__wrapper">
-			<div class="slider__slide card"></div>
-			<div class="swiper__slide card"></div>
-			<div class="swiper__slide card"></div>
-			<div class="swiper__slide card"></div>
-			<div class="swiper__slide card"></div>
-			<div class="swiper__slide card"></div>
 		</div>
-	</div>
-
-</div> -->
-
 
 	</div>
 </section>
+			<section class="section category">
+	<div class="container category__container">
+		<h2 class="visually-hidden" aria-hidden="true" tabindex="-1">Заголовок категории товаров</h2>
 
+		<div class="category__col">
+			<div class="category__item category__item-high">
+				<a href="../chairs_and_armchairs.html" class="category__inner chairs">
+					<picture class="category__image">
+						<source srcset="img/chairs.webp" type="image/webp">
+						<img loading="lazy" src="img/chairs.jpg" class="image" width="393" height="320" alt="фото кресла">
+					</picture>
+					<div class="category__content">
+						<span class="category__name">Кресла и стулья</span>
+					</div>
+				</a>
+			</div>
+			<div class="category__item category__item-high">
+				<a href="#" class="category__inner staff">
+					<picture class="category__image">
+						<source srcset="img/staff.webp" type="image/webp">
+						<img loading="lazy" src="img/staff.jpg" class="image" width="393" height="320" alt="фото мебели для персонала">
+					</picture>
+					<div class="category__content">
+						<span class="category__name">Мебель для персонала</span>
+					</div>
+				</a>
+			</div>
+			<div class="category__item category__item-high">
+				<a href="#" class="category__inner manager">
+					<picture class="category__image">
+						<source srcset="img/manager.webp" type="image/webp">
+						<img loading="lazy" src="img/manager.jpg" class="image" width="393" height="320" alt="фото мебели для руководителя">
+					</picture>
+					<div class="category__content">
+						<span class="category__name">Мебель для руководителя</span>
+					</div>
+				</a>
+			</div>
+		</div>
 
+		<div class="category__col">
+			<div class="category__item category__item-low resep">
+				<div class="category__content">
+					<span class="category__name">Стойки ресепшн</span>
+				</div>
+			</div>
+			<div class="category__item category__item-low partitions">
+				<div class="category__content">
+					<span class="category__name">Офисные перегородки и экраны</span>
+				</div>
+			</div>
+			<div class="category__item category__item-low storage">
+				<div class="category__content">
+					<span class="category__name">Системы хранения</span>
+				</div>
+			</div>
+			<div class="category__item category__item-low sofas">
+				<div class="category__content">
+					<span class="category__name">Офисные диваны и кресла</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="category__col">
+			<div class="category__item category__item-high safes">
+				<a href="#" class="category__inner chairs">
+					<div class="category__content">
+						<span class="category__name">Кресла и стулья</span>
+					</div>
+				</a>
+			</div>
+			<div class="category__item category__item-high office-supplies">
+				<div class="category__content">
+					<span class="category__name">Товары для офиса</span>
+				</div>
+			</div>
+			<div class="category__item category__item-high school-furniture">
+				<div class="category__content">
+					<span class="category__name">Школьная мебель</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+			
 		</main>
 		<footer class="footer"></footer>
 	</div>
 
 
+	<!-- script  GreenSock-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
+
+	<!-- script  Swiper-->
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+	<!-- basic script  -->
 	<script src="js/app.min.js"></script>
+
+	<!-- script  ionicons svg-->
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 

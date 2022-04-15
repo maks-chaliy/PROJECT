@@ -10,12 +10,12 @@
   display: flex;
 }
 
-@mixin flex-v-center {
+@mixin flex-h-center {
   display: flex;
   align-items: center;
 }
 
-@mixin flex-h-center {
+@mixin flex-v-center {
   display: flex;
   justify-content: center;
 }
@@ -63,31 +63,31 @@
 	justify-content: center;
 }
 
-@mixin xl-max{
+@mixin laptop-max{
 	@media (max-width: (1440px)) {
 		@content;
 	}
 }
 
-@mixin xl {
+@mixin laptop {
 	@media (max-width: (1200px)) {
 		@content;
 	}
 }
 
-@mixin lg {
+@mixin tablet-max {
 	@media (max-width: (1024px)) {
 		@content;
 	}
 }
 
-@mixin md {
+@mixin tablet {
 	@media (max-width: (768px)) {
 		@content;
 	}
 }
 
-@mixin sm {
+@mixin mobile {
 	@media (max-width: (576px)) {
 		@content;
 	}

@@ -6,6 +6,7 @@ flsFunctions.isWebp();
 //=============/подключение модулей js/=============
 import '../js/modules/scrollByClick.js';
 import '../js/modules/burger.js';
+import '../js/modules/nav.js';
 import '../js/modules/slider.js';
 
 
@@ -13,3 +14,5 @@ import '../js/modules/slider.js';
 
 
 //=============/=============/=============
+
+// gsap.to("#logo", {duration: 1, x: 100});
