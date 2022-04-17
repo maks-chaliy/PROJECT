@@ -41,13 +41,19 @@
 @mixin flex-column {
 	display: flex;
 	flex-direction: column;
-;
 }
 
 @mixin flex-column-start {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+}
+
+@mixin flex-column-center-sb {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
 }
 
 @mixin flex-column-center {
@@ -89,6 +95,12 @@
 
 @mixin mobile {
 	@media (max-width: (576px)) {
+		@content;
+	}
+}
+
+@mixin mobile-min {
+	@media (max-width: (425px)) {
 		@content;
 	}
 }

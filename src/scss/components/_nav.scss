@@ -1,5 +1,6 @@
 //=============/=============/=============
 .navigation {
+	position: relative;
 	padding: 0 15px;
 	position: fixed;
 	top: -110%;
@@ -21,7 +22,6 @@
 	@include tablet {
 		top: 0;
 		left: -100%;
-		width: 80%;
 		height: 100vh;
 		transform: translateX(0);
 		transition: left 0.5s linear;
@@ -42,19 +42,21 @@
 }
 
 //=============/=============/=============
-.nav-dropdown {
-	overflow: hidden;
-	height: 0;
-	transition: all 0.25s ease;
-
-	&__list {
-		padding: 10px 20px;
-	}
-}
-
-//=============/=============/=============
 .nav {
-	width: 250px;
+	width: 400px;
+	height: 100%;
+	padding-top: 70px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+
+	@include mobile-min {
+		padding-left: 0;
+		width: 290px;
+	}
+
+	&__item {
+		padding: 10px 0;
+	}
 
 	&__header {
 		width: 100%;
@@ -63,9 +65,15 @@
 	}
 
 	&__title {
+		font-size: 18px;
+		font-weight: 400;
 		color: #000;
 		position: relative;
 		transition: 0.2s;
+
+		@include mobile-min {
+			font-size: 16px;
+		}
 	}
 
 	&__icon {
@@ -77,5 +85,23 @@
 
 	&-open .nav__icon {
 		transform: rotate(180deg);
+	}
+}
+
+//=============/=============/=============
+.nav-dropdown {
+	overflow: hidden;
+	height: 0;
+	transition: all 0.25s ease;
+
+	&__list {
+		padding: 10px 20px;
+	}
+
+	&__link {
+		display: inline-block;
+		font-size: 16px;
+		color: var(--black-color);
+		padding: 10px 0;
 	}
 }

@@ -17,3 +17,13 @@ let slider = new Swiper($slider, {
 	effect: 'fade',
 });
 
+
+const $sliderPopular = document.querySelector('.slider-popular');
+
+let sliderPopular = new Swiper($sliderPopular, {
+	slideClass: 'slider-popular__slide',
+	wrapperClass: 'slider-popular__wrapper',
+	loop: true,
+	slidesPerView: 3,
+	spaceBetween: 10,
+});

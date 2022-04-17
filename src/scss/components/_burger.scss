@@ -76,3 +76,34 @@
 		height: 30px;
 	}
 }
+
+// //=============/=============/=============
+.burger-close {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 30px;
+	height: 30px;
+	display: none;
+
+	@include tablet {
+		display: block;
+	}
+
+	&__line {
+		position: absolute;
+		left: 0;
+		top: 50%;
+		width: 100%;
+		height: 2px;
+		background-color: var(--black-color);
+
+		&--first {
+			transform: rotate(45deg);
+		}
+
+		&--second {
+			transform: rotate(-45deg);
+		}
+	}
+}

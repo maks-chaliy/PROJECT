@@ -2,7 +2,8 @@
 const $burger = document.querySelector('.burger'),
 	$nav = document.querySelector('.navigation'),
 	$body = document.querySelector('body'),
-	$navItems = document.querySelectorAll('.navigation__item');
+	$navItems = document.querySelectorAll('.nav-dropdown'),
+	$burgerClose = document.querySelector('.burger-close');
 
 $burger.addEventListener('click', () => {
 
@@ -12,6 +13,8 @@ $burger.addEventListener('click', () => {
 });
 
 
+
+
 //закрыть меню при клике на любой пункт меню
 //удаляем все ранее присвоенные классы для открытия меню
 $navItems.forEach(el => {
@@ -19,6 +22,11 @@ $navItems.forEach(el => {
 		$burger.classList.remove('burger--active');
 		$nav.classList.remove('navigation--active');
 		$body.classList.remove('stop-scroll');
+	})
+
+	$burgerClose.addEventListener('click',()=>{
+		$nav.classList.remove('navigation--active');
+		$burger.classList.remove('burger--active');
 	})
 });
 
